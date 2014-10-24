@@ -14,7 +14,8 @@
 //***********************************//
 //*************DEFINE****************//
 //***********************************//
-#define TAG_HIGH_PING_KICKER_CSGO "[AIO HIGH PING KICKER] - "
+#define TAG_HIGH_PING_KICKER_CSGO 				"[AIO HIGH PING KICKER] - "
+#define PLUGIN_VERSION_HIGH_PING_KICKER_CSGO	"1.0.0"
 #define UMIN(%1,%2) (%1 < %2 ? %2 : %1)
 
 
@@ -51,7 +52,7 @@ new C_client_ping[MAXPLAYERS+1];
 /***********************************************************/
 public OnPluginStartHightPingKickerCsgo()
 {
-	CreateConVar("aio_high_ping_kicker_version", PLUGIN_VERSION, "Version", CVARS);
+	CreateConVar("aio_high_ping_kicker_version", PLUGIN_VERSION_HIGH_PING_KICKER_CSGO, "Version", CVARS);
 	
 	cvar_active_high_ping_kicker_csgo 					= CreateConVar("active_high_ping_kicker_csgo",  					"0", 					"Enable/Disable Sounds Kill", 			DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
 	cvar_active_high_ping_kicker_csgo_dev				= CreateConVar("active_high_ping_kicker_csgo_dev", 					"0", 					"Enable/Disable Sounds Kill Dev Mod", 	DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
